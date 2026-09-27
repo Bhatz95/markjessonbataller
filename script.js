@@ -241,45 +241,22 @@ Thank you!`;
        DATA FOR N8N
     ----------------------------------------- */
 
-    const payload = {
-
-      yourName: name,
-
-      emailAddress: email,
-
-      phoneNumber: phone,
-
-      preferredContactMethod:
-        preferredContact,
-
-      contactInfo:
-        phone || email,
-
-      currentLocation:
-        country,
-
-      preferredPhilippineLocation:
-        location,
-
-      budgetPaymentPreference:
-        budget,
-
-      tellMeWhatYouNeed:
-        needs,
-
-      privacyConsent:
-        consent,
-
-      source:
-        "Mark Jesson Bataller Website",
-
-      pageUrl:
-        window.location.href,
-
-      submittedAt:
-        new Date().toISOString()
-
-    };
+      const payload = {
+    yourName: name,
+    emailAddress: email,
+    phoneNumber: phone,
+    mobileWhatsappViber: phone,
+    preferredContactMethod: preferredContact,
+    contactInfo: phone || email,
+    currentLocation: country,
+    preferredPhilippineLocation: location,
+    budgetPaymentPreference: budget,
+    tellMeWhatYouNeed: needs,
+    privacyConsent: consent,
+    source: "Mark Jesson Bataller Website",
+    pageUrl: window.location.href,
+    submittedAt: new Date().toISOString()
+  };
 
 
     /* -----------------------------------------
